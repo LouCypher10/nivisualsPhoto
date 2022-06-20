@@ -25,6 +25,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .about {
+  position: relative;
   width: 50vw;
   align-self: center;
   margin-top: 50px;
@@ -36,5 +37,11 @@ img {
   width: 35vw;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 4vw;
+}
+@media screen and (max-width: 550px) {
+  .about {
+    width: 90vw;
+  }
 }
 </style>

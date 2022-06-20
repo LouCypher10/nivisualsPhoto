@@ -46,16 +46,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .container {
+  height: 50vw;
   display: flex;
   justify-content: center;
   vertical-align: middle;
   align-items: center;
-  transform: translateY(17vw);
-}
-@media screen and (max-width: 900px) {
-  .container {
-    transform: translateY(6vw);
-  }
 }
 img {
   width: 30vw;
@@ -64,7 +59,6 @@ img {
 }
 
 .icon-cards {
-  position: relative;
   width: 60vw;
   height: 40vw;
   max-width: 380px;

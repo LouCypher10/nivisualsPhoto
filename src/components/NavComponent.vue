@@ -11,10 +11,12 @@
     <div class="main_btn">
       <img src="../assets/img/envelope.svg" alt="Letter" />&nbsp; Contact me
     </div>
-    <div class="main_btn">
-      <img src="../assets/img/facebook.svg" alt="Social media" />&nbsp; Social
-      media
-    </div>
+    <router-link to="social">
+      <div class="main_btn">
+        <img src="../assets/img/facebook.svg" alt="Social media" />&nbsp; Social
+        media
+      </div></router-link
+    >
   </div>
 </template>
 
@@ -29,11 +31,10 @@ export default {
 
 <style lang="scss" scoped>
 .main {
-  position: absolute;
-  transform: translateY(77vw);
   display: flex;
-  min-width: 100vw;
+  min-width: 95vw;
   justify-content: space-around;
+  margin-bottom: 40px;
   .main_btn {
     display: flex;
     flex-direction: column;
@@ -65,6 +66,7 @@ export default {
     }
   }
 }
+
 @media screen and (max-width: 550px) {
   .main {
     flex-direction: column;
@@ -76,6 +78,9 @@ export default {
       width: 30vw;
       height: 30vw;
       filter: none;
+      img {
+        width: 8vw;
+      }
     }
   }
 }

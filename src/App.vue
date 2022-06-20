@@ -22,8 +22,8 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  height: 100vw;
+  width: auto;
+  height: auto;
   background-image: url("./assets/img/together.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -34,11 +34,5 @@ export default {
 
 a {
   text-decoration: none;
-}
-
-@media screen and (max-width: 770px) {
-  #app {
-    height: 250vw;
-  }
 }
 </style>
