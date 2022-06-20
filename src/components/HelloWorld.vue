@@ -1,122 +1,163 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-          >babel</a
+  <div class="container">
+    <figure class="icon-cards mt-3">
+      <div class="icon-cards__content">
+        <div
+          class="icon-cards__item d-flex align-items-center justify-content-center"
         >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router"
-          target="_blank"
-          rel="noopener"
-          >router</a
+          <span class="h1"
+            ><img src="../assets/img/irish_man.jpg" alt="Irish man"
+          /></span>
+        </div>
+        <div
+          class="icon-cards__item d-flex align-items-center justify-content-center"
         >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-          target="_blank"
-          rel="noopener"
-          >eslint</a
+          <span class="h1"
+            ><img src="../assets/img/DarkKacper.jpg" alt="Dark Kacper"
+          /></span>
+        </div>
+        <div
+          class="icon-cards__item d-flex align-items-center justify-content-center"
         >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
-        >
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
-      </li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
+          <span class="h1"
+            ><img
+              src="../assets/img/girlBlueDress.jpg"
+              alt="Girl in blue dress"
+          /></span>
+        </div>
+      </div>
+    </figure>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
-  props: {
-    msg: String,
+  name: "CardsImages",
+  setup() {
+    function classToggle() {
+      var el = document.querySelector(".icon-cards__content");
+      el.classList.toggle("step-animation");
+    }
+
+    document.querySelector("#toggle-animation");
+    document.addEventListener("click", classToggle);
   },
 };
 </script>
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  transform: translateY(12vw);
+}
+img {
+  width: 30vw;
+  height: auto;
+  border-radius: 15px;
+}
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+.icon-cards {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+  perspective: 1000px;
+  transform-origin: center;
+
+  // This is the element that rotates with the animation
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: translateZ(-30vw) rotateY(0);
+    animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+
+    &.step-animation {
+      animation: carousel 8s infinite steps(1) forwards;
+    }
+  }
+
+  // Individual cards
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    transform-origin: center;
+
+    &:nth-child(1) {
+      transform: rotateY(0) translateZ(35vw);
+    }
+
+    &:nth-child(2) {
+      transform: rotateY(120deg) translateZ(35vw);
+    }
+
+    &:nth-child(3) {
+      transform: rotateY(240deg) translateZ(35vw);
+    }
+  }
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+// Carousel animation
+
+@keyframes carousel {
+  0%,
+  17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+  }
+  27.5%,
+  45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+  }
+  55%,
+  72.5% {
+    transform: translateZ(-35vw) rotateY(-240deg);
+  }
+  82.5%,
+  100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+  }
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+// Jelly checkbox animation
+
+@keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
 }
 </style>

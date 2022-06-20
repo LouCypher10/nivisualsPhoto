@@ -1,10 +1,19 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <router-link to="/"><header-with-logo /></router-link> |
   <router-view />
+  <router-link to="/about">About</router-link>
 </template>
+
+<script>
+import HeaderWithLogo from "./components/HeaderWithLogo.vue";
+
+export default {
+  name: "App",
+  components: {
+    HeaderWithLogo,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -19,5 +28,9 @@
   background-position: center;
   display: flex;
   flex-direction: column;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
