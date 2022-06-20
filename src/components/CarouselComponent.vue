@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: "CardsImages",
+  name: "CarouselComponent",
   setup() {
     function classToggle() {
       var el = document.querySelector(".icon-cards__content");
@@ -50,7 +50,12 @@ export default {
   justify-content: center;
   vertical-align: middle;
   align-items: center;
-  transform: translateY(12vw);
+  transform: translateY(17vw);
+}
+@media screen and (max-width: 900px) {
+  .container {
+    transform: translateY(6vw);
+  }
 }
 img {
   width: 30vw;

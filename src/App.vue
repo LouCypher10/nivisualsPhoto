@@ -1,16 +1,18 @@
 <template>
-  <router-link to="/"><header-with-logo /></router-link> |
+  <router-link to="/"><header-with-logo /></router-link>
   <router-view />
-  <router-link to="/about">About</router-link>
+  <nav-component />
 </template>
 
 <script>
 import HeaderWithLogo from "./components/HeaderWithLogo.vue";
+import NavComponent from "./components/NavComponent.vue";
 
 export default {
   name: "App",
   components: {
     HeaderWithLogo,
+    NavComponent,
   },
 };
 </script>
@@ -21,7 +23,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  height: 150vh;
+  height: 100vw;
   background-image: url("./assets/img/together.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -32,5 +34,11 @@ export default {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 770px) {
+  #app {
+    height: 250vw;
+  }
 }
 </style>
