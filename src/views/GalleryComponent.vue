@@ -7,15 +7,15 @@
       </li>
       <li>
         <img src="../assets/img/3.jpg" width="200" />
-        <p>Events</p>
+        <p>Weddings & Events</p>
       </li>
       <li>
         <img src="../assets/img/4.jpg" width="200" />
-        <p>Lovers</p>
+        <p>Couples</p>
       </li>
       <li>
-        <img src="../assets/img/Outdoor.jpg" width="200" />
-        <p>Openspace</p>
+        <img src="../assets/img/Maternity.jpg" width="200" />
+        <p>Maternity</p>
       </li>
     </ul>
   </div>
@@ -26,11 +26,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-p {
-  font-family: "Homemade Apple", cursive;
-  font-size: 23px;
-  color: rgb(105, 33, 33);
-}
 ul {
   margin: 5vw 25vw 15vw 25vw;
 }
@@ -71,6 +66,9 @@ li:nth-child(4) {
 }
 
 p {
-  margin: -15px 0 0 0;
+  margin: -6px 0 0 0;
+  font-family: "Homemade Apple", cursive;
+  font-size: 23px;
+  color: rgb(105, 33, 33);
 }
 </style>
