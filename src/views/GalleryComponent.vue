@@ -2,7 +2,9 @@
   <div class="main">
     <ul>
       <li>
-        <img src="../assets/img/Portrait.jpg" width="200" />
+        <router-link to="portraits">
+          <img src="../assets/img/Portrait.jpg" width="200"
+        /></router-link>
         <p>Portraits</p>
       </li>
       <li>

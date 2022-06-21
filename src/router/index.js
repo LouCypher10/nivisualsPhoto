@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import SocialMedia from "../views/SocialMedia.vue";
 import GalleryComponent from "../views/GalleryComponent.vue";
+import PortraitsComponent from "../views/Gallery/PortraitsComponent.vue";
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: "/gallery",
     name: "gallery",
     component: GalleryComponent,
+  },
+  {
+    path: "/portraits",
+    name: "portraits",
+    component: PortraitsComponent,
   },
 ];
 
