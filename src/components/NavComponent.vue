@@ -5,9 +5,11 @@
         <img src="../assets/img/user.svg" alt="About me" />&nbsp; About me
       </div>
     </router-link>
-    <div class="main_btn">
-      <img src="../assets/img/picture.svg" alt="Picture" />&nbsp; Recent works
-    </div>
+    <router-link to="gallery">
+      <div class="main_btn">
+        <img src="../assets/img/picture.svg" alt="Picture" />&nbsp; Recent works
+      </div></router-link
+    >
     <div class="main_btn">
       <img src="../assets/img/envelope.svg" alt="Letter" />&nbsp; Contact me
     </div>

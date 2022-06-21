@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import SocialMedia from "../views/SocialMedia.vue";
+import GalleryComponent from "../views/GalleryComponent.vue";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: "/social",
     name: "social",
     component: SocialMedia,
+  },
+  {
+    path: "/gallery",
+    name: "gallery",
+    component: GalleryComponent,
   },
 ];
 

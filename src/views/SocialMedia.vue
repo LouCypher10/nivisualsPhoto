@@ -3,15 +3,13 @@
     <div class="social">
       <a href="https://www.facebook.com/Nivisuals"
         ><img src="../assets/img/FB.png" alt="Facebook icon" /></a
-      >Dzięki Facebookowi będziesz na bierząco z najnowszymi wydarzeniami.
-      Dowiesz się, na jakich wydarzeniach można nas spotkać. To również dobre
-      miejsce, by nawiązać z nami kontakt.
+      >Stay tuned and keep in touch with us on our facebook page.
     </div>
     <div class="social">
       <a href="https://www.instagram.com/nivisuals/"
         ><img src="../assets/img/Daco_4677259.png" alt="Instagram icon" /></a
-      >Na Instagramie publikujemy najnowsze zdjęcia. To dobre miejsce, by poznać
-      przekrój naszej twórczości i śledzić naszą pracę.
+      >Follow us on Instagram to keep up with the latest photoshoots and
+      creations.
     </div>
   </div>
 </template>
@@ -36,8 +34,6 @@ export default {
     align-items: center;
     width: 30vw;
     margin-bottom: 50px;
-    a {
-    }
     img {
       height: 20vw;
       width: 20vw;
