@@ -8,15 +8,21 @@
         <p>Portraits</p>
       </li>
       <li>
-        <img src="../assets/img/3.jpg" width="200" />
+        <router-link to="weddings">
+          <img src="../assets/img/3.jpg" width="200"
+        /></router-link>
         <p>Weddings & Events</p>
       </li>
       <li>
-        <img src="../assets/img/4.jpg" width="200" />
+        <router-link to="couples">
+          <img src="../assets/img/4.jpg" width="200"
+        /></router-link>
         <p>Couples</p>
       </li>
       <li>
-        <img src="../assets/img/Maternity.jpg" width="200" />
+        <router-link to="maternity">
+          <img src="../assets/img/Maternity.jpg" width="200"
+        /></router-link>
         <p>Maternity</p>
       </li>
     </ul>

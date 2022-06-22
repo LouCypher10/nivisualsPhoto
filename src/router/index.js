@@ -4,6 +4,10 @@ import AboutView from "../views/AboutView.vue";
 import SocialMedia from "../views/SocialMedia.vue";
 import GalleryComponent from "../views/GalleryComponent.vue";
 import PortraitsComponent from "../views/Gallery/PortraitsComponent.vue";
+import WeddingComponent from "../views/Gallery/WeddingComponent.vue";
+import CouplesComponent from "../views/Gallery/CouplesComponent.vue";
+import MaternityComponent from "../views/Gallery/MaternityComponent.vue";
+import ContactComponent from "../views/ContactComponent.vue";
 
 const routes = [
   {
@@ -30,6 +34,26 @@ const routes = [
     path: "/portraits",
     name: "portraits",
     component: PortraitsComponent,
+  },
+  {
+    path: "/weddings",
+    name: "weddings",
+    component: WeddingComponent,
+  },
+  {
+    path: "/couples",
+    name: "couples",
+    component: CouplesComponent,
+  },
+  {
+    path: "/maternity",
+    name: "maternity",
+    component: MaternityComponent,
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: ContactComponent,
   },
 ];
 

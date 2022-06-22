@@ -10,9 +10,11 @@
         <img src="../assets/img/picture.svg" alt="Picture" />&nbsp; Recent works
       </div></router-link
     >
-    <div class="main_btn">
-      <img src="../assets/img/envelope.svg" alt="Letter" />&nbsp; Contact me
-    </div>
+    <router-link to="contact">
+      <div class="main_btn">
+        <img src="../assets/img/envelope.svg" alt="Letter" />&nbsp; Contact me
+      </div></router-link
+    >
     <router-link to="social">
       <div class="main_btn">
         <img src="../assets/img/facebook.svg" alt="Social media" />&nbsp; Social
