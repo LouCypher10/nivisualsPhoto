@@ -1,43 +1,24 @@
 <template>
   <div class="main">
     <ul>
-      <li>
-        <img src="../../assets/img/m1.jpg" width="200" />
-      </li>
-      <li>
-        <img src="../../assets/img/m2.jpg" width="200" />
-      </li>
-      <li>
-        <img src="../../assets/img/m3.jpg" width="200" />
-      </li>
-      <li>
-        <img src="../../assets/img/m4.jpg" width="200" />
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <img src="../../assets/img/m5.jpg" width="200" />
-      </li>
-      <li>
-        <img src="../../assets/img/m6.jpg" width="200" />
-      </li>
-      <li>
-        <img src="../../assets/img/m7.jpg" width="200" />
-      </li>
-      <li>
-        <img src="../../assets/img/m8.jpg" width="200" />
+      <li v-for="(image, index) in gallery" :key="index">
+        <img :src="require(`@/assets/img/${image}.jpg`)" alt="image" />
       </li>
     </ul>
   </div>
 </template>
 <script>
 export default {
-  name: "MaternityComponent",
+  name: "WeddingComponent",
+  setup() {
+    const gallery = ["m1", "m2", "m3", "m4", "m5", "m6", "m7", "m8"];
+    return { gallery };
+  },
 };
 </script>
 <style lang="scss" scoped>
 .main {
-  margin: 5vw 25vw 15vw 25vw;
+  margin: 5vw 20vw 15vw 20vw;
 }
 
 li {
@@ -45,7 +26,6 @@ li {
   display: inline-block;
   list-style: none;
   position: relative;
-  border: solid 12px #fff;
   background: #fff;
   box-shadow: 0 0 15px 0px #555;
   transition: all 1s ease;
@@ -57,7 +37,6 @@ li {
 
 li:hover {
   top: 0px;
-  opacity: 0.5;
 }
 
 li:nth-child(1) {
@@ -74,5 +53,33 @@ li:nth-child(3) {
 
 li:nth-child(4) {
   transform: rotate(20deg);
+}
+
+li:nth-child(5) {
+  transform: rotate(10deg);
+}
+
+li:nth-child(6) {
+  transform: rotate(0deg);
+}
+
+li:nth-child(7) {
+  transform: rotate(-10deg);
+}
+
+li:nth-child(8) {
+  transform: rotate(20deg);
+}
+
+img {
+  border: solid 12px #fff;
+  width: 25vw;
+}
+
+@media screen and (max-width: 550px) {
+  img {
+    width: 60vw;
+    border: solid 5px #fff;
+  }
 }
 </style>

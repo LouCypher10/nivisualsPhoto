@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <img src="../assets/img/Emilka.jpg" alt="Emilka" />
+    <img src="../assets/img/Emilka.png" alt="Emilka" />
     <h1>Photography with passion</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, optio

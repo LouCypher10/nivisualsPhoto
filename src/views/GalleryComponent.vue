@@ -35,7 +35,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 ul {
-  margin: 5vw 25vw 15vw 25vw;
+  margin: 5vw 20vw 15vw 20vw;
 }
 li {
   text-align: center;
