@@ -43,7 +43,7 @@ export default {
     gap: 1vw;
     width: 30vw;
     height: 40vw;
-    background-image: url("../assets/img/photographs.jpg");
+    background-image: url("../img/photographs.jpg");
     background-size: cover;
     .contact {
       width: 25vw;

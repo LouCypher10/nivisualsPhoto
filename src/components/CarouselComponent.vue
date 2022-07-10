@@ -6,23 +6,21 @@
           class="icon-cards__item d-flex align-items-center justify-content-center"
         >
           <span class="h1"
-            ><img src="../assets/img/irish_man.jpg" alt="Irish man"
+            ><img src="../img/irish_man.jpg" alt="Irish man"
           /></span>
         </div>
         <div
           class="icon-cards__item d-flex align-items-center justify-content-center"
         >
           <span class="h1"
-            ><img src="../assets/img/DarkKacper.jpg" alt="Dark Kacper"
+            ><img src="../img/DarkKacper.jpg" alt="Dark Kacper"
           /></span>
         </div>
         <div
           class="icon-cards__item d-flex align-items-center justify-content-center"
         >
           <span class="h1"
-            ><img
-              src="../assets/img/girlBlueDress.jpg"
-              alt="Girl in blue dress"
+            ><img src="../img/girlBlueDress.jpg" alt="Girl in blue dress"
           /></span>
         </div>
       </div>

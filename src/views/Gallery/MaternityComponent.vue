@@ -2,7 +2,7 @@
   <div class="main">
     <ul>
       <li v-for="(image, index) in gallery" :key="index">
-        <img :src="require(`@/assets/img/${image}.jpg`)" alt="image" />
+        <img :src="require(`@/img/${image}.jpg`)" alt="image" />
       </li>
     </ul>
   </div>

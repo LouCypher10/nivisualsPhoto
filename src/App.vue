@@ -24,7 +24,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   width: auto;
   height: auto;
-  background-image: url("./assets/img/together.jpg");
+  background-image: url("./img/together.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

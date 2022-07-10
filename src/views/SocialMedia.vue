@@ -2,12 +2,12 @@
   <div class="container">
     <div class="social">
       <a href="https://www.facebook.com/Nivisuals"
-        ><img src="../assets/img/FB.png" alt="Facebook icon" /></a
+        ><img src="../img/FB.png" alt="Facebook icon" /></a
       >Stay tuned and keep in touch with us on our facebook page.
     </div>
     <div class="social">
       <a href="https://www.instagram.com/nivisuals/"
-        ><img src="../assets/img/Daco_4677259.png" alt="Instagram icon" /></a
+        ><img src="../img/Daco_4677259.png" alt="Instagram icon" /></a
       >Follow us on Instagram to keep up with the latest photoshoots and
       creations.
     </div>

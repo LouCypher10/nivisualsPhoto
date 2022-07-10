@@ -3,25 +3,25 @@
     <ul>
       <li>
         <router-link to="portraits">
-          <img src="../assets/img/Portrait.jpg" width="200"
+          <img src="../img/Portrait.jpg" width="200"
         /></router-link>
         <p>Portraits</p>
       </li>
       <li>
         <router-link to="weddings">
-          <img src="../assets/img/3.jpg" width="200"
+          <img src="../img/3.jpg" width="200"
         /></router-link>
         <p>Weddings & Events</p>
       </li>
       <li>
         <router-link to="couples">
-          <img src="../assets/img/4.jpg" width="200"
+          <img src="../img/4.jpg" width="200"
         /></router-link>
         <p>Couples</p>
       </li>
       <li>
         <router-link to="maternity">
-          <img src="../assets/img/Maternity.jpg" width="200"
+          <img src="../img/Maternity.jpg" width="200"
         /></router-link>
         <p>Maternity</p>
       </li>

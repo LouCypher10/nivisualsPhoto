@@ -1,20 +1,13 @@
 <template>
   <div class="about">
-    <img src="../assets/img/Emilka.png" alt="Emilka" />
+    <img src="../img/Emilka.png" alt="Emilka" />
     <h1>Photography with passion</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, optio
-      reiciendis, aut odio voluptates qui voluptatibus at doloremque iure eos
-      obcaecati repellendus placeat officiis veritatis? Vero, ducimus.
-      Perspiciatis non maiores debitis, expedita dignissimos deserunt enim ipsa
-      architecto suscipit sint, explicabo quae praesentium minus commodi
-      distinctio culpa? Unde aliquam corrupti sint dolores veritatis autem ipsam
-      magni voluptatibus quam. Eum a, tempore repudiandae nesciunt, dolore
-      distinctio nihil blanditiis accusamus sint ad facilis libero voluptatum
-      dignissimos itaque nam quasi debitis praesentium velit laborum,
-      voluptatibus enim consequuntur. Aperiam accusantium facilis veniam non
-      iste assumenda aliquam exercitationem pariatur, blanditiis at sed eveniet
-      dolorum cupiditate veritatis!
+      We are a couple of photographers based in Northern Ireland. Working as a
+      team since 2021. We don't have wands, but we do have cameras, so we could
+      capture a little magic of your life. We change simple moments in a
+      beautiful memory. Available for individual or engagement portraits,
+      maternity & wedding photography.
     </p>
   </div>
 </template>
@@ -24,6 +17,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 .about {
   position: relative;
   width: 50vw;
@@ -31,6 +25,12 @@ export default {
   margin-top: 50px;
   text-align: center;
   color: #fff;
+  p {
+    font-family: "Dancing Script", cursive;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 2.8rem;
+  }
 }
 
 img {

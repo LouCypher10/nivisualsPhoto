@@ -2,23 +2,22 @@
   <div class="main">
     <router-link to="about">
       <div class="main_btn">
-        <img src="../assets/img/user.svg" alt="About me" />&nbsp; About me
+        <img src="../img/user.svg" alt="About me" />&nbsp; About me
       </div>
     </router-link>
     <router-link to="gallery">
       <div class="main_btn">
-        <img src="../assets/img/picture.svg" alt="Picture" />&nbsp; Recent works
+        <img src="../img/picture.svg" alt="Picture" />&nbsp; Recent works
       </div></router-link
     >
     <router-link to="contact">
       <div class="main_btn">
-        <img src="../assets/img/envelope.svg" alt="Letter" />&nbsp; Contact me
+        <img src="../img/envelope.svg" alt="Letter" />&nbsp; Contact me
       </div></router-link
     >
     <router-link to="social">
       <div class="main_btn">
-        <img src="../assets/img/facebook.svg" alt="Social media" />&nbsp; Social
-        media
+        <img src="../img/facebook.svg" alt="Social media" />&nbsp; Social media
       </div></router-link
     >
   </div>
