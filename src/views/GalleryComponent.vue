@@ -3,13 +3,13 @@
     <ul>
       <li>
         <router-link to="portraits">
-          <img src="../img/Portrait.jpg" width="200"
+          <img src="../img/p1.jpg" width="200"
         /></router-link>
         <p>Portraits</p>
       </li>
       <li>
         <router-link to="weddings">
-          <img src="../img/3.jpg" width="200"
+          <img src="../img/w6.jpg" width="200"
         /></router-link>
         <p>Weddings & Events</p>
       </li>
